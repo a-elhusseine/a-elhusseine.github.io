@@ -1,38 +1,129 @@
+/* Styles globaux */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding: 0;
+    color: #333;
+    line-height: 1.6;
 }
-header {
-    background: #333;
-    color: white;
-    text-align: center;
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 1em 0;
 }
+
+header {
+    background: linear-gradient(135deg, #007bff, #6c63ff);
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+header h1 span {
+    color: #ffcc00;
+}
+
 nav ul {
     display: flex;
     justify-content: center;
-    list-style-type: none;
-    background: #444;
-    margin: 0;
+    list-style: none;
     padding: 0;
+    margin: 0;
+    background: #333;
 }
+
 nav ul li {
     margin: 0 1em;
 }
+
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 1em;
+    display: block;
 }
-main {
-    padding: 2em;
+
+nav ul li a:hover {
+    background: #444;
 }
+
 section {
-    margin-bottom: 2em;
+    margin: 2em 0;
 }
+
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Projets */
+.project-grid {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    background: #f4f4f4;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* CV */
+.btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Galerie */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
 footer {
     text-align: center;
     background: #333;
     color: white;
     padding: 1em 0;
+    margin-top: 2em;
 }

@@ -3,40 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Abderrahmani El Husseine</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur mon portfolio</h1>
+        <div class="container">
+            <h1>Bienvenue, je suis <span>Abderrahmani El Husseine</span></h1>
+            <p>Consultant Senior Odoo | Développeur Python | Intégrateur de Systèmes | Complexity Destroyer</p>
+        </div>
     </header>
     <nav>
         <ul>
             <li><a href="#projects">Projets</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#gallery">Galerie</a></li>
             <li><a href="#about">À propos</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <main>
-        <section id="projects">
-            <h2>Projets</h2>
-            <div>
-                <h3>Projet 1</h3>
-                <p>Description du projet.</p>
-                <a href="https://github.com/utilisateur/projet1">Voir sur GitHub</a>
+        <section id="projects" class="container">
+            <h2>Mes Projets</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>Projet 1</h3>
+                    <p>Une courte description de votre projet.</p>
+                    <a href="https://github.com/utilisateur/projet1" target="_blank">Voir sur GitHub</a>
+                </div>
+                <div class="project">
+                    <h3>Projet 2</h3>
+                    <p>Une autre description de projet intéressant.</p>
+                    <a href="https://github.com/utilisateur/projet2" target="_blank">Voir sur GitHub</a>
+                </div>
             </div>
         </section>
-        <section id="about">
-            <h2>À propos</h2>
-            <p>Une brève description de vous.</p>
+        <section id="cv" class="container">
+            <h2>Mon CV</h2>
+            <p>Téléchargez mon CV pour découvrir mes expériences et compétences :</p>
+            <a href="cv.pdf" target="_blank" class="btn">Télécharger mon CV</a>
         </section>
-        <section id="contact">
-            <h2>Contact</h2>
+        <section id="gallery" class="container">
+            <h2>Galerie</h2>
+            <div class="gallery-grid">
+                <img src="images/projet1.jpg" alt="Projet 1">
+                <img src="images/projet2.jpg" alt="Projet 2">
+                <img src="images/projet3.jpg" alt="Projet 3">
+                <img src="images/projet4.jpg" alt="Projet 4">
+            </div>
+        </section>
+        <section id="about" class="container">
+            <h2>À propos de moi</h2>
+            <p>Je suis Abderrahmani El Husseine, un consultant senior spécialisé dans Odoo, le développement Python, et l'intégration de systèmes complexes. Mon objectif est de simplifier la complexité en fournissant des solutions innovantes et efficaces pour les entreprises.</p>
+        </section>
+        <section id="contact" class="container">
+            <h2>Contactez-moi</h2>
             <p>Email : <a href="mailto:votre_email@example.com">votre_email@example.com</a></p>
+            <p>LinkedIn : <a href="https://linkedin.com/in/votreprofil" target="_blank">Mon profil</a></p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Votre Nom</p>
+        <p>&copy; 2025 Abderrahmani El Husseine | Tous droits réservés</p>
     </footer>
 </body>
 </html>
