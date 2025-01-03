@@ -4,6 +4,7 @@ body {
     margin: 0;
     color: #333;
     line-height: 1.6;
+    background: #f4f4f9;
 }
 
 .container {
@@ -66,7 +67,7 @@ h2 {
 }
 
 .project {
-    background: #f4f4f4;
+    background: white;
     padding: 1em;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -125,5 +126,4 @@ footer {
     background: #333;
     color: white;
     padding: 1em 0;
-    margin-top: 2em;
 }
